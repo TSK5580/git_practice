@@ -1,0 +1,64 @@
+{
+	"name": "DelimitedText72",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_tutorial",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "tutorial-output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "_col0_",
+				"type": "String"
+			},
+			{
+				"name": "_col1_",
+				"type": "String"
+			},
+			{
+				"name": "_col2_",
+				"type": "String"
+			},
+			{
+				"name": "_col3_",
+				"type": "String"
+			},
+			{
+				"name": "_col4_",
+				"type": "String"
+			},
+			{
+				"name": "_col5_",
+				"type": "String"
+			},
+			{
+				"name": "_col6_",
+				"type": "String"
+			},
+			{
+				"name": "_col7_",
+				"type": "String"
+			},
+			{
+				"name": "_col8_",
+				"type": "String"
+			},
+			{
+				"name": "_col9_",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

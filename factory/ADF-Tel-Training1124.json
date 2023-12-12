@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Tel-Training1124",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "428121a9-fcab-4692-83df-482b0c045a11",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

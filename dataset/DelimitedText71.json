@@ -1,0 +1,33 @@
+{
+	"name": "DelimitedText71",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_tutorial",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename22": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.filename"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().filename22",
+					"type": "Expression"
+				},
+				"container": "tutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
