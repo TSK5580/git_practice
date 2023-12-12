@@ -63,7 +63,8 @@
 		],
 		"parameters": {
 			"filename": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "test"
 			}
 		},
 		"annotations": [],
